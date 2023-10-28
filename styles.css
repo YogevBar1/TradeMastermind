@@ -1,0 +1,125 @@
+/* Styles for Alpha Vantage API Test Page */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+h1 {
+    background-color: #007BFF;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin: 0;
+    font-size: 24px;
+}
+
+#stockForm {
+    text-align: center;
+    margin: 20px;
+}
+
+label {
+    display: inline-block;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+#getDataButton {
+    background-color: #0056b3;
+    color: #fff;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#getDataButton:hover {
+    background-color: #007BFF;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #007BFF;
+    color: #fff;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+pre {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    white-space: pre-wrap;
+    overflow-x: auto;
+}
+
+
+/* Style the checkboxes */
+input[type="checkbox"] {
+    appearance: none; /* Remove default styles */
+    -webkit-appearance: none; /* For some older versions of Safari */
+    width: 20px; /* Set the width of the custom checkbox */
+    height: 20px; /* Set the height of the custom checkbox */
+    background-color: #fff; /* Background color of the checkbox */
+    border: 2px solid #007BFF; /* Border color of the checkbox */
+    border-radius: 4px; /* Rounded corners */
+    position: relative;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* Style the custom checkboxes when they are checked */
+input[type="checkbox"]:checked {
+    background-color: #007BFF; /* Background color when checked */
+    border-color: #0056b3; /* Border color when checked */
+}
+
+/* Hide the default checkbox */
+input[type="checkbox"]::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url('data:image/png;base64,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') center center no-repeat; /* You can use a custom checkmark image */
+    background-size: 70% 70%; /* Adjust the size of the checkmark */
+    opacity: 0; /* Hide the default checkbox */
+    transition: opacity 0.3s;
+}
+
+/* Show the custom checkmark when the checkbox is checked */
+input[type="checkbox"]:checked::before {
+    opacity: 1; /* Show the custom checkmark */
+}
+

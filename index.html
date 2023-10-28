@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TradeMastermind</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1>TradeMastermind</h1>
+    <form id="stockForm">
+        <label for="ibmCheckbox">IBM:</label>
+        <input type="checkbox" id="ibmCheckbox" value="IBM">
+        <label for="aaplCheckbox">AAPL:</label>
+        <input type="checkbox" id="aaplCheckbox" value="AAPL">
+        <label for="googlCheckbox">GOOGL:</label>
+        <input type="checkbox" id="googlCheckbox" value="GOOGL">
+        <label for="msftCheckbox">MSFT:</label>
+        <input type="checkbox" id="msftCheckbox" value="MSFT">
+        <br>
+        <label for="amznCheckbox">AMZN:</label>
+        <input type="checkbox" id="amznCheckbox" value="AMZN">
+        <label for="tslaCheckbox">TSLA:</label>
+        <input type="checkbox" id="tslaCheckbox" value="TSLA">
+        <label for="nflxCheckbox">NFLX:</label>
+        <input type="checkbox" id="nflxCheckbox" value="NFLX">
+        <label for="nkeCheckbox">NKE:</label>
+        <input type="checkbox" id="nkeCheckbox" value="NKE">
+        <br>
+        <label for="cscoCheckbox">CSCO:</label>
+        <input type="checkbox" id="cscoCheckbox" value="CSCO">
+        <label for="intcCheckbox">INTC:</label>
+        <input type="checkbox" id="intcCheckbox" value="INTC">
+        <label for="qcomCheckbox">QCOM:</label>
+        <input type="checkbox" id="qcomCheckbox" value="QCOM">
+        <label for="amdCheckbox">AMD:</label>
+        <input type="checkbox" id="amdCheckbox" value="AMD">
+        <br>
+        <!-- Add 20 popular trades here, make sure they are not repeated -->
+        <label for="tsmCheckbox">TSM:</label>
+        <input type="checkbox" id="tsmCheckbox" value="TSM">
+        <label for="nvoCheckbox">NVO:</label>
+        <input type="checkbox" id="nvoCheckbox" value="NVO">
+        <label for="asmlCheckbox">ASML:</label>
+        <input type="checkbox" id="asmlCheckbox" value="ASML">
+        <label for="avgoCheckbox">AVGO:</label>
+        <input type="checkbox" id="avgoCheckbox" value="AVGO">
+        <br>
+        <label for="biduCheckbox">BIDU:</label>
+        <input type="checkbox" id="biduCheckbox" value="BIDU">
+        <label for="nvidiaCheckbox">NVDA:</label>
+        <input type="checkbox" id="nvidiaCheckbox" value="NVDA">
+        <label for="babaCheckbox">BABA:</label>
+        <input type="checkbox" id="babaCheckbox" value="BABA">
+        <label for="adbeCheckbox">ADBE:</label>
+        <input type="checkbox" id="adbeCheckbox" value="ADBE">
+        <br>
+        <label for="intuCheckbox">INTU:</label>
+        <input type="checkbox" id="intuCheckbox" value="INTU">
+        <label for="atviCheckbox">ATVI:</label>
+        <input type="checkbox" id="atviCheckbox" value="ATVI">
+        <label for="muCheckbox">MU:</label>
+        <input type="checkbox" id="muCheckbox" value="MU">
+        <label for="adskCheckbox">ADSK:</label>
+        <input type="checkbox" id="adskCheckbox" value="ADSK">
+        <br>
+        <label for="amgnCheckbox">AMGN:</label>
+        <input type="checkbox" id="amgnCheckbox" value="AMGN">
+        <label for="avtCheckbox">AVT:</label>
+        <input type="checkbox" id="avtCheckbox" value="AVT">
+        <label for="adiCheckbox">ADI:</label>
+        <input type="checkbox" id="adiCheckbox" value="ADI">
+        <label for="algnCheckbox">ALGN:</label>
+        <input type="checkbox" id="algnCheckbox" value="ALGN">
+        <br>
+        <label for="akamCheckbox">AKAM:</label>
+        <input type="checkbox" id="akamCheckbox" value="AKAM">
+        <label for="alrmCheckbox">ALRM:</label>
+        <input type="checkbox" id="alrmCheckbox" value="ALRM">
+        <label for="adpCheckbox">ADP:</label>
+        <input type="checkbox" id="adpCheckbox" value="ADP">
+        <label for="aalCheckbox">AAL:</label>
+        <input type="checkbox" id="aalCheckbox" value="AAL">
+        <br>
+        <label for="amdCheckbox">AAL:</label>
+        <input type="checkbox" id="amdCheckbox" value="AAL">
+        <label for="nvdaCheckbox">NVDA:</label>
+        <input type="checkbox" id="nvdaCheckbox" value="NVDA">
+        <label for="tsmCheckbox">TSM:</label>
+        <input type="checkbox" id="tsmCheckbox" value="TSM">
+        <label for="nvoCheckbox">NVO:</label>
+        <input type="checkbox" id="nvoCheckbox" value="NVO">
+        <br>
+        <label for="asmlCheckbox">ASML:</label>
+        <input type="checkbox" id="asmlCheckbox" value="ASML">
+        <label for="avgoCheckbox">AVGO:</label>
+        <input type="checkbox" id="avgoCheckbox" value="AVGO">
+        <label for="biduCheckbox">BIDU:</label>
+        <input type="checkbox" id="biduCheckbox" value="BIDU">
+        <label for="adbeCheckbox">ADBE:</label>
+        <input type="checkbox" id="adbeCheckbox" value="ADBE">
+        <br>
+        <label for="intuCheckbox">INTU:</label>
+        <input type="checkbox" id="intuCheckbox" value="INTU">
+        <label for="atviCheckbox">ATVI:</label>
+        <input type="checkbox" id="atviCheckbox" value="ATVI">
+        <label for="muCheckbox">MU:</label>
+        <input type="checkbox" id="muCheckbox" value="MU">
+        <label for="adskCheckbox">ADSK:</label>
+        <input type="checkbox" id="adskCheckbox" value="ADSK">
+        <br>
+        <label for="amgnCheckbox">AMGN:</label>
+        <input type="checkbox" id="amgnCheckbox" value="AMGN">
+        <label for="avtCheckbox">AVT:</label>
+        <input type="checkbox" id="avtCheckbox" value="AVT">
+        <label for="adiCheckbox">ADI:</label>
+        <input type="checkbox" id="adiCheckbox" value="ADI">
+        <label for="algnCheckbox">ALGN:</label>
+        <input type="checkbox" id="algnCheckbox" value="ALGN">
+        <br>
+        <label for="akamCheckbox">AKAM:</label>
+        <input type="checkbox" id="akamCheckbox" value="AKAM">
+        <label for="alrmCheckbox">ALRM:</label>
+        <input type="checkbox" id="alrmCheckbox" value="ALRM">
+        <label for="adpCheckbox">ADP:</label>
+        <input type="checkbox" id="adpCheckbox" value="ADP">
+        <label for="aalCheckbox">AAL:</label>
+        <input type="checkbox" id="aalCheckbox" value="AAL">
+  
+        <br><br>
+        <button type="button" id="getDataButton">Get Data</button>
+    </form>
+    <div id="responseOutput" class="table-container">
+        <!-- Table will be dynamically generated here -->
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
