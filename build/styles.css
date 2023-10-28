@@ -123,3 +123,21 @@ input[type="checkbox"]:checked::before {
     opacity: 1; /* Show the custom checkmark */
 }
 
+
+       /* Footer Styles */
+       footer {
+        background-color: #007BFF;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+    }
+
+    footer a {
+        color: #fff;
+        text-decoration: none;
+        margin: 0 10px;
+    }
+
+    footer a:hover {
+        text-decoration: underline;
+    }
